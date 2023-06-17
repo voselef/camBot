@@ -67,7 +67,11 @@ Your project is ready for running. Before running you need to do something every
 1. Open cmd and go to bin folder via writing this: `cd C:\Program Files (x86)\Java\jdk-1.8\bin`
 2. After than write `java code.SimpleRead`
 
-Java is ready for capturing photo. If a message with p content arrives java will be save photo to "C:/out" folder and discord bot will send it to channel.
+Java is ready for capturing photo. Open discord bot:
+1. Open cmd and write `cd [File path of main.py]`
+2. Write `python main.py` [^4]
+
+If a message with p content arrives java will be save photo to "C:/out" folder and discord bot will send it to channel.
 
 You can ask whatever you need about project
 
@@ -76,3 +80,4 @@ Enjoy your project :tada:
 [^1]: You need to download x86 jdk 8u371 even if you have x64 processor.
 [^2]: This project made for Windows OS. If you want to run in Linux or MacOS you need to update libraries and rewrite codes.
 [^3]: You don't need to worry about token. If you are running discord bot in your own computer, its impossible to anyone acces token unless you are using web server.
+[^4]: If it didn't work you can try `py main.py`or `python3 main.py`
