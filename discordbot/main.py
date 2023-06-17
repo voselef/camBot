@@ -7,16 +7,14 @@ import os
 from PIL import Image
 
 # CONFIGURATIONS
-filePath = r""
+filePath = r"" # Folder path that you run main.py
+token = "" # If you are using web server do not use that. (process.ENV.token)
+secondArduinoPort = ""
+rotateKey = 1 # If you don't want to rotate your photo rewrite 0. Default = 1
+
 jpgFileCurrentPath = rf"{filePath}\o.jpg"
 rotated_jpgFileCurrentPath = rf"{filePath}\p.jpg"
 logPath = rf"{filePath}\log.txt"
-token = "" # If you are using web server do not use that. (process.ENV.token)
-secondArduinoPort = "COM4"
-rotateKey = 1 # If you don't want to rotate your photo rewrite 0.
-
-print(jpgFileCurrentPath)
-
 intents = discord.Intents.all()
 intents.typing = False
 intents.presences = False
@@ -32,7 +30,7 @@ async def on_ready():
     print(f"Logged in as {client.user}. You are running camBot project by voselef :)")
     starttime = datetime.now()
     starttime2 = starttime.strftime("%Y-%m-%d %H:%M:%S")
-    await client.change_presence(activity=discord.Streaming(name=f'{starttime2}', url='https://www.youtube.com/watch?v=kbJu9LPQAGE&list=LL&index=5'))
+    await client.change_presence(activity=discord.Streaming(name=f'camBot by voselef', url='https://www.youtube.com'))
 
 @client.event
 async def on_message(message):
