@@ -1,3 +1,4 @@
+// First Arduino's code. Please look at circuit scheman at README.md
 #include <stdint.h>
 #include <avr/io.h>
 #include <util/twi.h>
